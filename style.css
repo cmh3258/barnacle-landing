@@ -1,0 +1,115 @@
+
+
+body{
+  margin:0;
+}
+
+h1,h2,h3,h4{
+  font-family: Droid Sans;
+  color: #3e3e3e;
+}
+p{
+  font-family: Lora;
+  color: #313131;
+}
+a{
+  color: white;
+  font-size: 14px;
+  text-transform: initial;
+}
+a:active,
+a:hover{
+  color: #9100FF;
+}
+
+/* header */
+  #header{
+    text-align: center;
+    margin: 5em;
+  }
+  #header input{
+    padding: 9px 12px;
+    width: 17em;
+  }
+  #header h1{
+    font-size: 30px;
+    font-family: Cabin, sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  #header h2{
+    color: #737373;
+    font-weight: lighter;
+    font-size: 14px;
+    width: 25%;
+    margin: 0 auto;
+    line-height: 22px;
+    margin-top: -12px;
+    margin-bottom: 18px;
+  }
+
+/* info section */
+  #info{
+    background-color: #9100FF;
+    padding: 7em 1em 5em;
+  }
+  #info > div p{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  #info > div{
+    width: 80%;
+    margin: 0 auto;
+  }
+  #info > div > div{
+    width: 30%;
+    display: inline-block;
+    padding: 1em;
+  }
+  #info img{
+    margin: 0 auto;
+    display: block;
+  }
+  #info > div > div img:nth-of-type(1){
+    width: 18em;
+  }
+  #info > div > div:nth-of-type(2) img{
+    width: 14em;
+  }
+  #info > div > div:nth-of-type(3) img{
+    width: 10em;
+  }
+
+/* social */
+  #social{
+    padding: 7em 1em;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #social ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style-type: none;
+  }
+  #social img{
+    width: 36px;
+    display: inline-block;
+  }
+  /*#social li:nth-of-type(2) img{
+    width: 43px;
+  }
+  #social li:nth-of-type(3) img{
+    width: 43px;
+  }*/
+
+/* footer */
+  footer{
+    padding: 3em;
+    background-color: #2f2f2f;
+    text-align: center;
+    color: #969696;
+  }
