@@ -27,9 +27,9 @@ a:hover{
     text-align: center;
     margin: 5em;
   }
-  #header input{
+  #mc_embed_signup input.email{
     padding: 9px 12px;
-    width: 17em;
+    width: 28em;
   }
   #header h1{
     font-size: 30px;
