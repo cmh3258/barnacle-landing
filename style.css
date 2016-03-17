@@ -25,11 +25,15 @@ a:hover{
 /* header */
   #header{
     text-align: center;
-    margin: 5em;
+    margin: 4em 0;
   }
   #mc_embed_signup input.email{
     padding: 9px 12px;
     width: 28em;
+  }
+  #mc_embed_signup_scroll{
+    width: 94%;
+    margin: 0 auto;
   }
   #header h1{
     font-size: 30px;
@@ -41,7 +45,7 @@ a:hover{
     color: #737373;
     font-weight: lighter;
     font-size: 14px;
-    width: 25%;
+    width: 94%;
     margin: 0 auto;
     line-height: 22px;
     margin-top: -12px;
@@ -51,7 +55,8 @@ a:hover{
 /* info section */
   #info{
     background-color: #9100FF;
-    padding: 7em 1em 5em;
+    /*padding: 7em 1em 5em;*/
+    padding: 5em 1em 1em;
   }
   #info > div p{
     width: 85%;
@@ -62,14 +67,10 @@ a:hover{
     line-height: 24px;
   }
   #info > div{
-    width: 80%;
+    /*width: 80%;*/
     margin: 0 auto;
   }
-  #info > div > div{
-    width: 30%;
-    display: inline-block;
-    padding: 1em;
-  }
+  
   #info img{
     margin: 0 auto;
     display: block;
@@ -90,6 +91,12 @@ a:hover{
     margin: 0 auto;
     text-align: center;
   }
+  #social h3{
+    line-height: 33px;
+  }
+  #social ul{
+    padding: 0;
+  }
   #social ul li{
     display: inline-block;
     margin: 20px;
@@ -108,8 +115,43 @@ a:hover{
 
 /* footer */
   footer{
-    padding: 3em;
+    padding: 2em;
     background-color: #2f2f2f;
     text-align: center;
     color: #969696;
+    line-height: 25px;
   }
+
+@media (min-width: 768px){
+  #mc_embed_signup input.email{
+    padding: 9px 12px !important;
+    width: 28em !important;
+    display: inline-block !important;
+  }
+  #mc_embed_signup .button{
+    width: auto !important;
+    display: inline-block !important;
+  }
+  #mc_embed_signup .clear {
+    display: inline-block !important;
+    width: auto !important;
+  }
+}
+
+@media(min-width: 1200px){
+  #header{
+    margin: 5em;
+  }
+  #header h2{
+    width: 25%;
+  }
+
+  #info > div > div{
+    width: 30%;
+    display: inline-block;
+    padding: 1em;
+  }
+
+}
+
+
