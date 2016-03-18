@@ -25,7 +25,13 @@ a:hover{
 /* header */
   #header{
     text-align: center;
-    margin: 4em 0;
+    background-color: #9100FF;
+  }
+  #header > div{
+    padding: 4em 0;
+  }
+  #mc_embed_signup{
+    background-color: transparent !important;
   }
   #mc_embed_signup input.email{
     padding: 9px 12px;
@@ -35,14 +41,27 @@ a:hover{
     width: 94%;
     margin: 0 auto;
   }
+  #mc_embed_signup input.email:focus{
+    /*-webkit-box-shadow:1px 2px 2px rgba(44, 84, 129, 1) inset;
+    -moz-box-shadow:1px 2px 2px rgba(44, 84, 129, 1) inset;
+    box-shadow:1px 1px 2px rgba(44, 84, 129, 1) inset;
+    outline: none;*/
+    outline:none !important;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 84, 129, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(44, 84, 129, .6);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0px rgba(44, 84, 129, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0px rgba(44, 84, 129, .6);
+    border:1px solid #2C5481 !important;
+  }
   #header h1{
     font-size: 30px;
     font-family: Cabin, sans-serif;
     font-weight: 600;
     font-style: italic;
+    color: white;
   }
   #header h2{
-    color: #737373;
+    color: #D6D6D6;
     font-weight: lighter;
     font-size: 14px;
     width: 94%;
@@ -54,7 +73,7 @@ a:hover{
 
 /* info section */
   #info{
-    background-color: #9100FF;
+    background-color: white;
     /*padding: 7em 1em 5em;*/
     padding: 5em 1em 1em;
   }
@@ -87,9 +106,16 @@ a:hover{
 
 /* social */
   #social{
-    padding: 7em 1em;
+    padding: 3em 1em;
     margin: 0 auto;
     text-align: center;
+  }
+  hr{
+    padding: 0;
+    border: 0px;
+    border-top: 1px solid #F3F3F3;
+    width: 70%;
+    margin: 0 auto;
   }
   #social h3{
     line-height: 33px;
@@ -115,8 +141,8 @@ a:hover{
 
 /* footer */
   footer{
-    padding: 2em;
-    background-color: #2f2f2f;
+    padding: 4em 0;
+    background-color: #1F1F1F;
     text-align: center;
     color: #969696;
     line-height: 25px;
@@ -139,17 +165,29 @@ a:hover{
 }
 
 @media(min-width: 1200px){
-  #header{
-    margin: 5em;
+  #header > div{
+    padding: 14em;
+  }
+  #header h1{
+    font-size: 38px;
   }
   #header h2{
-    width: 25%;
+    width: 40%;
+    font-size: 16px;
+    line-height: 27px;
   }
 
+  #info{
+    padding: 9em 1em 5em;
+  }
   #info > div > div{
     width: 30%;
     display: inline-block;
     padding: 1em;
+  }
+
+  #social{
+    padding: 7em 1em;
   }
 
 }
