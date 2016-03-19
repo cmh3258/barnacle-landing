@@ -11,6 +11,12 @@ h1,h2,h3,h4{
 p{
   font-family: Lora;
   color: #313131;
+  line-height: 26px;
+  font-size: 16px;
+}
+p a{
+  color: #9100FF;
+  font-size: 16px;
 }
 a{
   color: white;
@@ -21,6 +27,29 @@ a:active,
 a:hover{
   color: #9100FF;
 }
+
+/* topNav */
+  #topNav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3em;
+  }
+  #topNav li,
+  #topNav a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Ubuntu;
+    margin-bottom: 10px;
+    color: white;
+  }
+  #topNav li a{
+    opacity: .5;
+  }
+  #topNav li a:hover{
+    opacity: 1;
+  }
 
 /* header */
   #header{
@@ -139,6 +168,13 @@ a:hover{
     width: 43px;
   }*/
 
+/* posts */
+  #posts{
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+  }
+
 /* footer */
   footer{
     padding: 4em 0;
@@ -146,6 +182,7 @@ a:hover{
     text-align: center;
     color: #969696;
     line-height: 25px;
+    font-family: Lora;
   }
 
 @media (min-width: 768px){
@@ -168,6 +205,9 @@ a:hover{
   #header > div{
     padding: 14em;
   }
+    #about #header > div {
+      padding: 5em;
+    }
   #header h1{
     font-size: 38px;
   }
@@ -181,13 +221,18 @@ a:hover{
     padding: 9em 1em 5em;
   }
   #info > div > div{
-    width: 30%;
+    width: 26%;
     display: inline-block;
-    padding: 1em;
+    padding: 3em;
   }
 
   #social{
     padding: 7em 1em;
+  }
+
+  #posts{
+    padding: 5em 0;
+    width: 55%;
   }
 
 }
