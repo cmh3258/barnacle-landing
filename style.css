@@ -1,12 +1,14 @@
 
 
-body{
+html,body{
   margin:0;
+  background-color: #9100FF;
 }
 
 h1,h2,h3,h4{
   font-family: Droid Sans;
   color: #3e3e3e;
+
 }
 p{
   font-family: Lora;
@@ -57,7 +59,12 @@ a:hover{
     background-color: #9100FF;
   }
   #header > div{
-    padding: 4em 0;
+    /*padding: 4em 0;*/
+    /*top: 50%;*/
+        top: 25%;
+    position: absolute;
+    left: 0;
+    right: 0;
   }
   #mc_embed_signup{
     background-color: transparent !important;
@@ -82,12 +89,23 @@ a:hover{
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 0px rgba(44, 84, 129, .6);
     border:1px solid #2C5481 !important;
   }
+  #header{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
   #header h1{
     font-size: 30px;
     font-family: Cabin, sans-serif;
     font-weight: 600;
-    font-style: italic;
+    /*font-style: italic;*/
     color: white;
+
+        font-family: Quicksand;
+    font-weight: 600;
   }
   #header h2{
     color: #D6D6D6;
@@ -202,9 +220,9 @@ a:hover{
 }
 
 @media(min-width: 1200px){
-  #header > div{
+  /*#header > div{
     padding: 14em;
-  }
+  }*/
     #about #header > div {
       padding: 5em;
     }
